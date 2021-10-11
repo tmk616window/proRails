@@ -1,0 +1,59 @@
+version: "3"
+
+networks:
+  rails:
+
+volumes:
+  mysql-data:
+  bundle-data:
+  tmp-data:
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
+    ports:
+      - ${APP_PORT:-80}:80
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/logs:/var/log/nginx
+      - tmp-data:/var/www/src/tmp
+    depends_on:
+      - rails
+    networks:
+      - rails
+
+  db:
+    image: mysql:8.0
+    container_name: db
+    platform: linux/x86_64
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      RAILS_ENV: development
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
+    networks:
+      - rails
+
+  rails:
+    container_name: rails
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www
+      - bundle-data:/usr/local/bundle
+      - tmp-data:/var/www/src/tmp
+    command: puma -b unix:/var/www/src/tmp/sockets/puma.sock
+    environment:
+      TZ: "Asia/Tokyo"
+    networks:
+      - rails
+  
