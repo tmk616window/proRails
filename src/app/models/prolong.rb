@@ -1,0 +1,2 @@
+class Prolong < ApplicationRecord
+end
