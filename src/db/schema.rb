@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_11_202557) do
+ActiveRecord::Schema.define(version: 2021_10_18_045817) do
 
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "point"
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(version: 2021_10_11_202557) do
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
+  create_table "migrations", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "AddTask"
+    t.text "description"
+    t.string "purl"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "prolongs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "lange"
     t.datetime "created_at", precision: 6, null: false
@@ -56,6 +64,10 @@ ActiveRecord::Schema.define(version: 2021_10_11_202557) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "details"
+    t.bigint "user_id", null: false
+    t.text "description"
+    t.string "purl"
+    t.index ["user_id"], name: "index_tasks_on_user_id"
   end
 
   create_table "tools", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

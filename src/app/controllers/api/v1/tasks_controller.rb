@@ -33,6 +33,6 @@ class Api::V1::TasksController < ApplicationController
     private
 
     def task_params
-      params.require(:task).permit(:title,:age,:Logoimage)
+      params.require(:task).permit(:title,:Logoimage,:description, :purl, :user_id)
     end
 end
