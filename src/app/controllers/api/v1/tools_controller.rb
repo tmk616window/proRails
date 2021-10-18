@@ -38,9 +38,9 @@ class Api::V1::ToolsController < ApplicationController
         end    
     end
 
-        private
+    private
 
-        def Tool_params
-            params.require(:tool).permit(:name, :task_id)
-         end
+    def tool_params
+        params.require(:tool).permit(:name, :task_id)
+      end
 end
