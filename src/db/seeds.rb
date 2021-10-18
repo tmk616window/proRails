@@ -9,9 +9,9 @@
 # puts 'Creating todos...'
 
 # # 適当なTodoを5つ作成
-5.times do |i|
-  Task.create(title: "Task#{i + 1}", user_id: i + 1)
-end
+# 5.times do |i|
+#   Task.create(title: "Task#{i + 1}", user_id: i + 1)
+# end
 
 # puts '...Finished!'
 
@@ -38,8 +38,8 @@ end
 #     UproLang.create(lang:"vue", user_id:1)
 #   end
 
-#   5.times do |i|
-#     Like.create(user_id:i + 1, task_id:1)
-#   end
+  15.times do |i|
+    Like.create(user_id:i + 1, task_id: 5)
+  end
 
   puts '...Finished!'

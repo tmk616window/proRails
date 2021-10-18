@@ -11,13 +11,13 @@ class Api::V1::TasksController < ApplicationController
 
     
     def create
-    task = Task.new(task_params)
+        task = Task.new(task_params)
 
-    if task.save
-        render json: { status: 200, task: task }
-    else
-        render json: { status: 500, message: "Taskの作成に失敗しました" }
-    end
+        if task.save
+            render json: { status: 200, task: task }
+        else
+            render json: { status: 500, message: "Taskの作成に失敗しました" }
+        end
     end
 
     def destroy
@@ -33,6 +33,6 @@ class Api::V1::TasksController < ApplicationController
     private
 
     def task_params
-      params.require(:task).permit(:title,:age,:Logoimage)
+      params.require(:task).permit(:title,:Logoimage,:description, :purl, :user_id)
     end
 end
