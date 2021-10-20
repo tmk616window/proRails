@@ -4,7 +4,7 @@ class Api::V1::ToolsController < ApplicationController
       end
 
     def show
-        render json: { status: 200, prolang: Tool.where(task_id: params[:id]) }
+        render json: { status: 200, tools: Tool.where(task_id: params[:id]) }
       end      
     
     def create
