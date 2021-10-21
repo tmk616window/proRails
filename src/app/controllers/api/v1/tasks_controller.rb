@@ -48,3 +48,15 @@ class Api::V1::TasksController < ApplicationController
       params.require(:task).permit(:title,:logoImage,:description, :purl, :user_id)
     end
 end
+
+
+
+def update
+    user = User.find(params[:id])
+        if user.update(user_params)
+          render json: { status: 200, user: user }
+        else
+            render json: { status: 500, message: "userの更新に失敗しました" }
+        end
+  end
+
