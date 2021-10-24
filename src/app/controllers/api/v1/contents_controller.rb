@@ -1,10 +1,10 @@
 class Api::V1::ContentsController < ApplicationController
     def index
-        render json: { status: 200, content: Content.where(params[:task_id]) }
+        render json: { status: 200, content: Content.all }
       end
 
     def show
-        render json: { status: 200, content: Content.where(task_id: params[:id]) }
+        render json: { status: 200, contents: Content.where(task_id: params[:id]) }
       end      
     
     def create
@@ -18,7 +18,7 @@ class Api::V1::ContentsController < ApplicationController
       end
 
       def update
-        content = content.find(params[:id])
+        content = Content.find(params[:id])
 
         if content.update(content_params)
             render json: { status: 200, content: content }
@@ -29,7 +29,7 @@ class Api::V1::ContentsController < ApplicationController
           
 
     def destroy
-        content = content.find(params[:id])
+        content = Content.find(params[:id])
     
         if content.destroy
           render json: { status: 200, content: content }

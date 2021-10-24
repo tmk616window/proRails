@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       resources :upro_langs, only: [:index, :show, :update, :create, :destroy]      
       resources :likes, only: [:index, :show, :create, :destroy]      
       resources :users, only: [:index, :show, :update]      
+      resources :tposts, only: %i[index create destroy]
 
       mount_devise_token_auth_for 'User', at: 'auth', controllers: {
         registrations: 'api/v1/auth/registrations'

@@ -1,12 +1,13 @@
 class Api::V1::TasksController < ApplicationController
     def index
-            render json: { status: 200, tasks: Task.all }
+            @tasks = Task.all
+            render json: { status: 200, tasks:{task:@tasks, user: @tasks.users} }
         end
 
     def show
-        task = Task.find(params[:id])
+        @task = Task.find(params[:id])
 
-        render json: {status: 200, task: task}
+        render json: {status: 200, task:{task:@task, prolangs: @task.prolongs, tools: @task.tools, contents: @task.contents,comments: @task.comments, user: @task.user}}
     end
 
     
@@ -33,14 +34,14 @@ class Api::V1::TasksController < ApplicationController
 
     def update
         task = Task.find(params[:id])
-
-        if task.update
-            render json: { status: 200, task: task }
-        else
-            render json: { status: 500, message: "Taskの削除に失敗しました" }
-        end
-    end
-
+            if task.update(task_params)
+              render json: { status: 200, task: task }
+            else
+                render json: { status: 500, message: "userの更新に失敗しました" }
+            end
+      end
+  
+  
 
     private
 
@@ -49,14 +50,4 @@ class Api::V1::TasksController < ApplicationController
     end
 end
 
-
-
-def update
-    user = User.find(params[:id])
-        if user.update(user_params)
-          render json: { status: 200, user: user }
-        else
-            render json: { status: 500, message: "userの更新に失敗しました" }
-        end
-  end
 

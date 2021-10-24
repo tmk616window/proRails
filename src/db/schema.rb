@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_18_045817) do
+ActiveRecord::Schema.define(version: 2021_10_24_103122) do
 
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "point"
@@ -76,6 +76,13 @@ ActiveRecord::Schema.define(version: 2021_10_18_045817) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["task_id"], name: "index_tools_on_task_id"
+  end
+
+  create_table "tposts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.text "content"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "upro_langs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

@@ -17,17 +17,16 @@ class Api::V1::ProlongsController < ApplicationController
         end
       end
 
-      def update
-        prolong = Prolong.find(params[:id])
+    def update
+      prolong = Prolong.find(params[:id])
 
-        if prolong.update(prolong_params)
-            render json: { status: 200, prolong: prolong }
-        else
-            render json: { status: 500, message: "Prolongの更新に失敗しました" }
-        end
+      if prolong.update(prolong_params)
+          render json: { status: 200, prolong: prolong }
+      else
+          render json: { status: 500, message: "Prolongの更新に失敗しました" }
       end
+    end
           
-
     def destroy
         prolong = Prolong.find(params[:id])
     

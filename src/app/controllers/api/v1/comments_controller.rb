@@ -4,8 +4,9 @@ class Api::V1::CommentsController < ApplicationController
       end
 
     def show
-        render json: { status: 200, comment: Comment.where(task_id: params[:id]) }
-      end      
+        @comment = Comment.where(task_id: params[:id])
+        render json: { status: 200, comments: Comment.where(task_id: params[:id]) }
+      end
     
     def create
         comment = Comment.new(comment_params)
