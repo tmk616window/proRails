@@ -1,7 +1,7 @@
 class Api::V1::TasksController < ApplicationController
     def index
             @tasks = Task.all
-            render json: { status: 200, tasks:{task:@tasks, user: @tasks.users} }
+            render json: { status: 200, tasks: @tasks }, include: [:prolongs, :tools, :contents, :comments , :user]
         end
 
     def show
@@ -46,7 +46,7 @@ class Api::V1::TasksController < ApplicationController
     private
 
     def task_params
-      params.require(:task).permit(:title,:logoImage,:description, :purl, :user_id)
+      params.permit(:title,:logoImage,:description, :purl, :user_id)
     end
 end
 

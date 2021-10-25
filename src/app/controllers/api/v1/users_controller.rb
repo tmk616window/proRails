@@ -1,4 +1,5 @@
 class Api::V1::UsersController < ApplicationController
+
     def index
         render json: { status: 200, user: User.all }
       end
@@ -19,7 +20,8 @@ class Api::V1::UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:email, :name, :image, :live, :details, :age)
+        # params.require(:user).permit(:email, :name, :image, :live, :details, :age)
+        params.permit(:email, :name, :image, :live, :details, :age)
      end
 
 
