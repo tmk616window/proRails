@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_24_103122) do
+ActiveRecord::Schema.define(version: 2021_10_26_153505) do
 
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "point"
@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 2021_10_24_103122) do
   end
 
   create_table "migrations", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "AddTask"
     t.text "description"
     t.string "purl"
     t.datetime "created_at", precision: 6, null: false
@@ -64,9 +63,9 @@ ActiveRecord::Schema.define(version: 2021_10_24_103122) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "details"
-    t.bigint "user_id", null: false
     t.text "description"
     t.string "purl"
+    t.bigint "user_id"
     t.index ["user_id"], name: "index_tasks_on_user_id"
   end
 
@@ -112,9 +111,9 @@ ActiveRecord::Schema.define(version: 2021_10_24_103122) do
     t.text "tokens"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "age"
     t.string "live"
     t.text "details"
+    t.integer "age"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -127,6 +126,7 @@ ActiveRecord::Schema.define(version: 2021_10_24_103122) do
   add_foreign_key "likes", "tasks"
   add_foreign_key "likes", "users"
   add_foreign_key "prolongs", "tasks"
+  add_foreign_key "tasks", "users"
   add_foreign_key "tools", "tasks"
   add_foreign_key "upro_langs", "users"
 end

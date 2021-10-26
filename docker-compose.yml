@@ -26,7 +26,6 @@ services:
   db:
     image: mysql:8.0
     container_name: db
-    platform: linux/x86_64
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3306:3306"
@@ -34,6 +33,7 @@ services:
       - mysql-data:/var/lib/mysql
     environment:
       RAILS_ENV: development
+      # RAILS_ENV: production
       MYSQL_ROOT_PASSWORD: password
     ports:
       - 3306:3306
