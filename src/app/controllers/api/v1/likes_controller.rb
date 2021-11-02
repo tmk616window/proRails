@@ -3,11 +3,7 @@ class Api::V1::LikesController < ApplicationController
         like = Like.where(task_id: params[:id])
         render json: { status: 200, like: like }
       end
-    
-    #   def current_uer_like
-    #     @current_uer_like = @like.find_by(user_id: @current_user.id)
-    #   end
-    
+        
       def create
         like = Like.new(like_params)
         if like.save
