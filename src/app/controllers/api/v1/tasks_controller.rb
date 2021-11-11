@@ -10,7 +10,6 @@ class Api::V1::TasksController < ApplicationController
         render json: {status: 200, task:{task:@task, prolongs: @task.prolongs, tools: @task.tools, contents: @task.contents, comments: @task.comments, user: @task.user, likes: @task.likes}}
     end
 
-    
     def create
         task = Task.new(task_params)
 
