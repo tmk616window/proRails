@@ -6,7 +6,6 @@ class Api::V1::TasksController < ApplicationController
 
     def show
         @task = Task.find(params[:id])
-
         render json: {status: 200, task:{task:@task, prolongs: @task.prolongs, tools: @task.tools, contents: @task.contents, comments: @task.comments, user: @task.user, likes: @task.likes}}
     end
 
