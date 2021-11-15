@@ -29,9 +29,12 @@ puts 'Creating todos...'
   #   Tool.create(name: "lange#{i + 1}", task_id:21)
   # end
 
-  
+  5.times do |i|
+    ChatMessage.create(text: "test22", message_id: 3, user_id:3 ,chat_id:2)
+  end
 
-#   puts '...Finished!'
+
+  puts '...Finished!'
 
   # 5.times do |i|
   #   Content.create(title: "lange#{i + 1}", text: "test#{i + 1}",task_id:21)
