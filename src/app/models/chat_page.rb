@@ -1,0 +1,2 @@
+class ChatPage < ApplicationRecord
+end
