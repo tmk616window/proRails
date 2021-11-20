@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-<!-- sudo chown -R ubuntu -->
+<!-- sudo chown -R ubuntu src -->

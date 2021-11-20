@@ -1625,3 +1625,247 @@
 2021/11/17 12:12:45 [error] 32#32: *35806 access forbidden by rule, client: 165.232.86.149, server: https://enjob.work, request: "GET /.env HTTP/1.1", host: "52.194.62.139"
 2021/11/17 13:47:06 [error] 32#32: *36576 access forbidden by rule, client: 198.211.112.178, server: https://enjob.work, request: "GET /.env HTTP/1.1", host: "52.194.62.139"
 2021/11/17 14:37:07 [error] 32#32: *36994 access forbidden by rule, client: 137.184.197.67, server: https://enjob.work, request: "GET /.env HTTP/1.1", host: "52.194.62.139"
+2021/11/18 13:20:28 [warn] 1#1: server name "https://enjob.work" has suspicious symbols in /etc/nginx/conf.d/default.conf:9
+2021/11/18 13:20:28 [notice] 1#1: using the "epoll" event method
+2021/11/18 13:20:28 [notice] 1#1: nginx/1.20.2
+2021/11/18 13:20:28 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/11/18 13:20:28 [notice] 1#1: OS: Linux 5.4.0-1045-aws
+2021/11/18 13:20:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/11/18 13:20:28 [notice] 1#1: start worker processes
+2021/11/18 13:20:28 [notice] 1#1: start worker process 32
+2021/11/18 13:20:28 [notice] 1#1: start worker process 33
+2021/11/18 13:21:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/11/18 13:21:11 [notice] 32#32: gracefully shutting down
+2021/11/18 13:21:11 [notice] 33#33: gracefully shutting down
+2021/11/18 13:21:11 [notice] 32#32: exiting
+2021/11/18 13:21:11 [notice] 33#33: exiting
+2021/11/18 13:21:11 [notice] 32#32: exit
+2021/11/18 13:21:11 [notice] 33#33: exit
+2021/11/18 13:21:11 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/11/18 13:21:11 [notice] 1#1: worker process 32 exited with code 0
+2021/11/18 13:21:11 [notice] 1#1: signal 29 (SIGIO) received
+2021/11/18 13:21:11 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2021/11/18 13:21:11 [notice] 1#1: worker process 33 exited with code 0
+2021/11/18 13:21:11 [notice] 1#1: exit
+2021/11/18 13:21:15 [notice] 1#1: using the "epoll" event method
+2021/11/18 13:21:15 [notice] 1#1: nginx/1.20.2
+2021/11/18 13:21:15 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/11/18 13:21:15 [notice] 1#1: OS: Linux 5.4.0-1045-aws
+2021/11/18 13:21:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/11/18 13:21:15 [notice] 1#1: start worker processes
+2021/11/18 13:21:15 [notice] 1#1: start worker process 30
+2021/11/18 13:21:15 [notice] 1#1: start worker process 31
+2021/11/18 13:26:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/11/18 13:26:16 [notice] 31#31: gracefully shutting down
+2021/11/18 13:26:16 [notice] 31#31: exiting
+2021/11/18 13:26:16 [notice] 31#31: exit
+2021/11/18 13:26:16 [notice] 30#30: gracefully shutting down
+2021/11/18 13:26:16 [notice] 30#30: exiting
+2021/11/18 13:26:16 [notice] 30#30: exit
+2021/11/18 13:26:16 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/11/18 13:26:16 [notice] 1#1: worker process 30 exited with code 0
+2021/11/18 13:26:16 [notice] 1#1: worker process 31 exited with code 0
+2021/11/18 13:26:16 [notice] 1#1: exit
+2021/11/18 13:36:13 [notice] 1#1: using the "epoll" event method
+2021/11/18 13:36:13 [notice] 1#1: nginx/1.20.2
+2021/11/18 13:36:13 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/11/18 13:36:13 [notice] 1#1: OS: Linux 5.4.0-1045-aws
+2021/11/18 13:36:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/11/18 13:36:13 [notice] 1#1: start worker processes
+2021/11/18 13:36:13 [notice] 1#1: start worker process 31
+2021/11/18 13:36:13 [notice] 1#1: start worker process 32
+2021/11/18 13:48:17 [error] 31#31: *30 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.well-known/security.txt HTTP/1.1", host: "ec2-52-196-130-88.ap-northeast-1.compute.amazonaws.com"
+2021/11/18 14:12:24 [error] 31#31: *237 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 14:27:40 [error] 31#31: *369 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 14:47:30 [error] 31#31: *538 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 15:36:09 [error] 31#31: *953 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 17:08:48 [error] 31#31: *1718 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.DS_Store HTTP/1.1", host: "3.115.25.72"
+2021/11/18 17:25:13 [error] 31#31: *1857 access forbidden by rule, client: 161.35.212.57, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/18 17:37:15 [error] 31#31: *1964 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 17:39:46 [error] 31#31: *1985 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 17:46:32 [error] 31#31: *2047 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 17:47:12 [error] 31#31: *2052 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 17:50:30 [error] 31#31: *2088 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 18:36:09 [error] 31#31: *2479 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.well-known/security.txt HTTP/1.1", host: "52.196.130.88"
+2021/11/18 19:33:21 [error] 31#31: *2965 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 20:03:59 [error] 31#31: *3216 access forbidden by rule, client: 159.203.18.202, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/18 20:45:58 [error] 31#31: *3588 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 20:46:33 [error] 31#31: *3595 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 20:51:49 [error] 31#31: *3637 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 20:54:47 [error] 31#31: *3664 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 22:03:03 [error] 31#31: *4246 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 22:09:42 [error] 31#31: *4301 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 23:03:18 [error] 31#31: *4748 access forbidden by rule, client: 165.232.86.149, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/18 23:13:17 [error] 31#31: *4837 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 23:35:00 [error] 31#31: *5023 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/18 23:43:32 [error] 31#31: *5102 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/18 23:56:55 [error] 31#31: *5214 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 00:21:37 [error] 31#31: *5436 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 00:37:52 [error] 31#31: *5573 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 00:56:03 [error] 31#31: *5724 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 01:21:49 [error] 31#31: *5941 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 01:34:04 [error] 31#31: *6052 access forbidden by rule, client: 3.236.16.141, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 01:49:27 [error] 31#31: *6184 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 02:07:33 [error] 31#31: *6338 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:10:58 [error] 31#31: *6369 access forbidden by rule, client: 165.232.86.149, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 02:14:12 [error] 31#31: *6400 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 02:20:24 [error] 31#31: *6454 access forbidden by rule, client: 3.236.16.141, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 02:49:59 [error] 31#31: *6709 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:00 [error] 31#31: *6709 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /core/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:00 [error] 31#31: *6709 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /public/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:00 [error] 31#31: *6710 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /app/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:00 [error] 31#31: *6710 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /laravel/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:00 [error] 31#31: *6710 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /laravel/core/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:01 [error] 31#31: *6709 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /beta/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:01 [error] 31#31: *6710 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /config/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:01 [error] 31#31: *6710 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /kyc/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:01 [error] 31#31: *6709 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /admin/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:01 [error] 31#31: *6710 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /prod/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:50:02 [error] 31#31: *6709 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /api/.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 02:52:28 [error] 31#31: *6734 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 03:51:38 [error] 31#31: *7279 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 04:02:38 [error] 31#31: *7375 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 04:07:42 [error] 31#31: *7418 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 05:12:59 [error] 31#31: *7974 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 05:25:54 [error] 31#31: *8089 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 05:25:56 [error] 31#31: *8089 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 05:26:13 [error] 31#31: *8095 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 05:50:04 [error] 31#31: *8289 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 05:52:40 [error] 31#31: *8313 access forbidden by rule, client: 161.35.212.57, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 06:43:19 [error] 31#31: *8738 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 06:43:20 [error] 31#31: *8738 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 07:02:50 [error] 31#31: *8909 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "POST /mifs/.;/services/LogService HTTP/1.1", host: "52.196.130.88", referrer: "https://52.196.130.88:443"
+2021/11/19 07:11:01 [error] 31#31: *8982 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "POST /mifs/.;/services/LogService HTTP/1.1", host: "3.115.25.72", referrer: "https://3.115.25.72:443"
+2021/11/19 07:47:10 [error] 31#31: *9283 access forbidden by rule, client: 65.157.23.94, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 07:51:28 [error] 31#31: *9324 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 08:27:06 [error] 31#31: *9653 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 08:32:22 [error] 31#31: *9703 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 08:35:33 [error] 31#31: *9734 access forbidden by rule, client: 165.232.86.149, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 09:03:01 [error] 31#31: *9983 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.well-known/security.txt HTTP/1.1", host: "52.196.130.88"
+2021/11/19 09:55:12 [error] 31#31: *10431 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 10:11:32 [error] 31#31: *10564 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 10:15:49 [error] 31#31: *10605 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env.bak HTTP/1.1", host: "3.115.25.72"
+2021/11/19 10:15:49 [error] 31#31: *10605 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.aws/credentials HTTP/1.1", host: "3.115.25.72"
+2021/11/19 11:14:04 [error] 31#31: *11105 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 11:46:12 [error] 31#31: *11391 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 11:54:17 [error] 31#31: *11462 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 11:57:22 [error] 31#31: *11487 access forbidden by rule, client: 161.35.212.57, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 12:14:48 [error] 31#31: *11639 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 12:54:01 [error] 31#31: *11968 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 13:41:05 [error] 31#31: *12364 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 13:48:41 [error] 31#31: *12432 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 13:59:25 [error] 31#31: *12524 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.aws/credentials%0A/api/.env%0A/vendor/.env%0A/lib/.env%0A/lab/.env%0A/cronlab/.env%0A/cron/.env%0A/core/.env%0A/core/app/.env%0A/core/database/.env%0A/database/.env%0A/config/.env%0A/assets/.env%0A/app/.env%0A/apps/.env%0A/uploads/.env%0A/sitemaps/.env%0A/site/.env%0A/admin/.env%0A/web/.env%0A/public/.env%0A/en/.env%0A/tools/.env%0A/v1/.env%0A/administrator/.env%0A/laravel/.env%0A/phpinfo%0A/phpinfo.php%0A/aws.yml%0A/config/aws.yml%0A/info.p HTTP/1.1", host: "3.115.25.72"
+2021/11/19 14:12:34 [error] 31#31: *12631 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 14:16:36 [error] 31#31: *12669 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 14:18:46 [error] 31#31: *12689 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.well-known/security.txt HTTP/1.1", host: "enjob.work"
+2021/11/19 14:55:58 [error] 31#31: *13014 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 14:58:03 [error] 31#31: *13033 access forbidden by rule, client: 137.184.197.71, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 15:01:06 [error] 31#31: *13062 access forbidden by rule, client: 165.232.86.149, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 15:08:48 [error] 31#31: *13129 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 15:30:58 [error] 31#31: *13320 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 16:38:28 [error] 31#31: *13897 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 16:53:09 [error] 31#31: *14022 access forbidden by rule, client: 143.198.120.120, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 17:25:32 [error] 31#31: *14300 access forbidden by rule, client: 161.35.212.57, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 17:29:09 [error] 31#31: *14333 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 17:53:54 [error] 31#31: *14553 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 18:07:59 [error] 31#31: *14675 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 18:14:57 [error] 31#31: *14742 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 18:17:23 [error] 31#31: *14764 access forbidden by rule, client: 41.140.72.16, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 18:48:11 [error] 31#31: *15025 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 18:59:47 [error] 31#31: *15122 access forbidden by rule, client: 104.248.55.236, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 19:18:44 [error] 31#31: *15289 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 19:36:09 [error] 31#31: *15447 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 19:49:20 [error] 31#31: *15556 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 19:52:07 [error] 31#31: *15581 access forbidden by rule, client: 137.184.197.90, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 20:05:35 [error] 31#31: *15706 access forbidden by rule, client: 159.203.18.202, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 20:41:45 [error] 31#31: *16009 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 20:58:36 [error] 31#31: *16153 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 21:18:55 [error] 31#31: *16326 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 22:41:13 [error] 31#31: *17005 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 22:41:17 [error] 31#31: *17005 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 22:50:17 [error] 31#31: *17090 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 22:54:30 [error] 31#31: *17125 access forbidden by rule, client: 143.198.120.120, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 23:01:38 [error] 31#31: *17186 access forbidden by rule, client: 3.236.16.141, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 23:07:13 [error] 31#31: *17237 access forbidden by rule, client: 165.232.86.149, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/19 23:19:04 [error] 31#31: *17341 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 23:20:45 [error] 31#31: *17356 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/19 23:40:40 [error] 31#31: *17530 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/19 23:46:45 [error] 31#31: *17586 access forbidden by rule, client: 3.236.16.141, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/20 00:05:29 [error] 31#31: *17745 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 00:12:44 [error] 31#31: *17812 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env.bak HTTP/1.1", host: "ec2-52-196-130-88.ap-northeast-1.compute.amazonaws.com"
+2021/11/20 00:12:45 [error] 31#31: *17812 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.aws/credentials HTTP/1.1", host: "ec2-52-196-130-88.ap-northeast-1.compute.amazonaws.com"
+2021/11/20 00:16:07 [error] 31#31: *17849 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 00:16:09 [error] 31#31: *17850 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 00:29:36 [error] 31#31: *17968 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 00:41:30 [error] 31#31: *18066 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 00:58:36 [error] 31#31: *18211 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 01:12:01 [error] 31#31: *18326 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 01:19:26 [error] 31#31: *18405 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 01:35:26 [error] 31#31: *18544 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 01:56:18 [error] 31#31: *18723 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "POST /mifs/.;/services/LogService HTTP/1.1", host: "52.196.130.88", referrer: "https://52.196.130.88:443"
+2021/11/20 02:05:43 [error] 31#31: *18810 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 02:22:47 [error] 31#31: *18954 access forbidden by rule, client: 165.232.86.149, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/20 02:41:59 [error] 31#31: *19118 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 03:02:31 [error] 31#31: *19295 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 03:19:06 [error] 31#31: *19432 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 03:19:27 [error] 31#31: *19436 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 03:28:57 [error] 31#31: *19515 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 03:28:59 [error] 31#31: *19515 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 03:29:00 [error] 31#31: *19519 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env.save HTTP/1.1", host: "52.196.130.88"
+2021/11/20 03:56:59 [error] 31#31: *19758 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 04:22:57 [error] 31#31: *19989 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 04:33:50 [error] 31#31: *20088 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 04:33:53 [error] 31#31: *20089 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 04:33:55 [error] 31#31: *20088 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env.save HTTP/1.1", host: "52.196.130.88"
+2021/11/20 04:37:18 [error] 31#31: *20130 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 04:54:02 [error] 31#31: *20271 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 05:12:07 [error] 31#31: *20421 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 05:19:27 [error] 31#31: *20486 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 05:23:03 [error] 31#31: *20519 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 05:40:03 [error] 31#31: *20784 access forbidden by rule, client: 185.254.31.134, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/20 05:44:16 [error] 31#31: *20835 access forbidden by rule, client: 159.203.18.202, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/20 05:45:08 [error] 31#31: *20857 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
+2021/11/20 06:24:38 [error] 31#31: *21275 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 07:20:34 [error] 31#31: *21771 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 07:33:38 [error] 31#31: *21908 access forbidden by rule, client: 104.248.121.10, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/20 07:36:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/11/20 07:36:56 [notice] 32#32: gracefully shutting down
+2021/11/20 07:36:56 [notice] 31#31: gracefully shutting down
+2021/11/20 07:36:56 [notice] 32#32: exiting
+2021/11/20 07:36:56 [notice] 31#31: exiting
+2021/11/20 07:36:56 [notice] 32#32: exit
+2021/11/20 07:36:56 [notice] 31#31: exit
+2021/11/20 07:36:56 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/11/20 07:36:56 [notice] 1#1: worker process 31 exited with code 0
+2021/11/20 07:36:56 [notice] 1#1: worker process 32 exited with code 0
+2021/11/20 07:36:56 [notice] 1#1: exit
+2021/11/20 07:44:43 [notice] 1#1: using the "epoll" event method
+2021/11/20 07:44:43 [notice] 1#1: nginx/1.20.2
+2021/11/20 07:44:43 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/11/20 07:44:43 [notice] 1#1: OS: Linux 5.11.0-1021-aws
+2021/11/20 07:44:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/11/20 07:44:43 [notice] 1#1: start worker processes
+2021/11/20 07:44:43 [notice] 1#1: start worker process 31
+2021/11/20 07:44:43 [notice] 1#1: start worker process 32
+2021/11/20 08:00:49 [notice] 1#1: using the "epoll" event method
+2021/11/20 08:00:49 [notice] 1#1: nginx/1.20.2
+2021/11/20 08:00:49 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/11/20 08:00:49 [notice] 1#1: OS: Linux 5.11.0-1021-aws
+2021/11/20 08:00:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/11/20 08:00:49 [notice] 1#1: start worker processes
+2021/11/20 08:00:49 [notice] 1#1: start worker process 31
+2021/11/20 08:00:49 [notice] 1#1: start worker process 32
+2021/11/20 09:07:31 [notice] 1#1: using the "epoll" event method
+2021/11/20 09:07:31 [notice] 1#1: nginx/1.20.2
+2021/11/20 09:07:31 [notice] 1#1: built by gcc 10.3.1 20210424 (Alpine 10.3.1_git20210424) 
+2021/11/20 09:07:31 [notice] 1#1: OS: Linux 5.11.0-1021-aws
+2021/11/20 09:07:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/11/20 09:07:31 [notice] 1#1: start worker processes
+2021/11/20 09:07:31 [notice] 1#1: start worker process 31
+2021/11/20 09:07:31 [notice] 1#1: start worker process 32
+2021/11/20 09:20:03 [error] 31#31: *117 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 09:51:07 [error] 31#31: *383 access forbidden by rule, client: 137.184.197.91, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "35.76.93.190"
+2021/11/20 09:52:02 [error] 31#31: *394 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 09:52:04 [error] 31#31: *394 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "52.196.130.88"
+2021/11/20 09:52:05 [error] 31#31: *395 access forbidden by rule, client: 10.0.10.179, server: 35.76.93.190, request: "GET /.env.save HTTP/1.1", host: "52.196.130.88"
+2021/11/20 09:57:09 [error] 31#31: *439 access forbidden by rule, client: 10.0.30.181, server: 35.76.93.190, request: "GET /.env HTTP/1.1", host: "3.115.25.72"
