@@ -30,7 +30,7 @@ puts 'Creating todos...'
   # end
 
   5.times do |i|
-    ChatMessage.create(text: "test22", message_id: 3, user_id:3 ,chat_id:2)
+    ChatMessage.create(text: "test22", message_id: 6, user_id:2 ,chat_id:1)
   end
 
 

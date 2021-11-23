@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_16_132258) do
+ActiveRecord::Schema.define(version: 2021_11_23_091920) do
 
   create_table "chat_messages", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "text"
@@ -72,6 +72,15 @@ ActiveRecord::Schema.define(version: 2021_11_16_132258) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "task_id"
     t.index ["task_id"], name: "index_prolongs_on_task_id"
+  end
+
+  create_table "rooms", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.integer "user"
+    t.integer "chat_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_rooms_on_user_id"
   end
 
   create_table "tasks", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -145,6 +154,7 @@ ActiveRecord::Schema.define(version: 2021_11_16_132258) do
   add_foreign_key "likes", "tasks"
   add_foreign_key "likes", "users"
   add_foreign_key "prolongs", "tasks"
+  add_foreign_key "rooms", "users"
   add_foreign_key "tasks", "users"
   add_foreign_key "tools", "tasks"
   add_foreign_key "upro_langs", "users"

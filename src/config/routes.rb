@@ -12,6 +12,8 @@ Rails.application.routes.draw do
       resources :users, only: [:index, :show, :update]      
       resources :tposts, only: %i[index create destroy]
       resources :chat_messages, only: [:index, :show, :create, :destroy]      
+      resources :rooms, only: [:index, :show, :create, :destroy]      
+      resources :posts, only: [:index, :show, :create, :destroy]      
 
       mount_devise_token_auth_for 'User', at: 'auth', controllers: {
         registrations: 'api/v1/auth/registrations'
