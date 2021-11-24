@@ -1,7 +1,7 @@
 class Api::V1::TasksController < ApplicationController
     def index
             @tasks = Task.all
-            render json: { status: 200, tasks: @tasks }, include: [:prolongs]
+            render json: { status: 200, tasks: @tasks.order(id: "DESC") }, include: [:prolongs]
         end
 
     def show

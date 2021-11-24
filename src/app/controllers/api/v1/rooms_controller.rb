@@ -4,7 +4,7 @@ class Api::V1::RoomsController < ApplicationController
     end
  
     def show
-        render json: { status: 200, rooms: Room.where(chat_id: params[:id]) }
+      render json: { status: 200, rooms:  Room.find(params[:id])}
     end
 
     def create
